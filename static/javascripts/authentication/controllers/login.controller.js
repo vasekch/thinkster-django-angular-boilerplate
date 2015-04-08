@@ -1,5 +1,5 @@
 /**
-* Login controller
+* LoginController
 * @namespace thinkster.authentication.controllers
 */
 (function () {
@@ -23,7 +23,7 @@
 
         /**
         * @name activate
-        * @desc Actions to be performed when this controlled is instantiated
+        * @desc Actions to be performed when this controller is instantiated
         * @memberOf thinkster.authentication.controllers.LoginController
         */
         function activate() {

@@ -15,9 +15,11 @@
     function post() {
         /**
         * @name directive
+        * @desc The directive to be returned
+    	* @memberOf thinkster.posts.directives.Post
         */
         var directive = {
-            recstrict: 'E',
+            restrict: 'E',
             scope: {
                 post: '='
             },

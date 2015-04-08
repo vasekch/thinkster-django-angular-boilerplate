@@ -3,7 +3,7 @@
 * @namespace thinkster.posts.services
 */
 (function (){
-    'user strict';
+    'use strict';
 
     angular
         .module('thinkster.posts.services')
@@ -44,7 +44,9 @@
         * @memberOf thinkster.posts.services.Posts
         */
         function create(content) {
-            return
+            return $http.post('/api/v1/posts/', {
+            	content: content
+            });
         }
 
         /**
@@ -55,7 +57,7 @@
         * @memberOf thinkster.posts.services.Posts
         */
         function get(username) {
-            return $http.get('/api/v1/accounts/' + username + '/posts/')
+            return $http.get('/api/v1/accounts/' + username + '/posts/');
         }
     }
 })();

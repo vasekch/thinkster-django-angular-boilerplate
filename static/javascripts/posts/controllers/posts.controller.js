@@ -1,3 +1,7 @@
+/**
+* PostControler
+* @namespace thinkster.posts.controllers
+*/
 (function () {
     'use strict';
 
@@ -33,7 +37,7 @@
         * @name calculateNumberOfColumns
         * @desc Calculate number of columns based on screen width
         * @returns {Number} The number of columns containing Posts
-        * @memberOf thinkster.posts.controllers.PostsControllers
+        * @memberOf thinkster.posts.controllers.PostsController
         */
         function calculateNumberOfColumns() {
             var width = $(window).width();
@@ -68,7 +72,7 @@
             */
             function columnMapFn(column) {
                 var lengths = column.map(function (element) {
-                    return element.content.length
+                    return element.content.length;
                 });
 
                 return lengths.reduce(sum, 0) * column.length;
